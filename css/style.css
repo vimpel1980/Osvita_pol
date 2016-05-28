@@ -1,0 +1,94 @@
+
+.inline {display: inline-block;}
+
+.relat {position: relative;}
+
+.absolut {position: absolute;}
+
+.bord {margin: 0;
+       border: none;}
+
+a {text-decoration: none;}
+
+.wrap {width: 955px;
+       background-color: white;
+       margin: 0 auto;
+       }
+
+.px{height: 3px;
+    color: #1E90FF;
+    background-color: #1E90FF;}
+
+.px2{size: 7px;
+ 	   height: 7px;
+     color: #191970;
+     background-color: #191970;}
+
+.px3 {height: 5px;
+      color: #7B68EE;
+      background-color: #7B68EE;}
+
+.shap {width: 100%;}
+
+.kult {height: 170px
+       width: 650px;
+       margin-left: 30px;
+       overflow: hidden;
+       box-sizing: border-box;
+       top: 0;
+       right: 0;}
+
+.logo {width: 211px;
+       height: 180px;
+       overflow: hidden;}
+
+div.kult>img {width: 100%;
+              padding-left: 35px;}
+
+.pod-zam {size: 1px;
+          height: 1px;
+          color: blue;
+          background-color: blue;
+          margin-top: 1px;
+          margin-bottom: 1px;}
+
+.pod-zam2 {size: 2px;
+          height: 2px;
+          color: blue;
+          background-color: blue;}
+
+ul.menu>li {display: inline-block;
+             background-color: #E0FFFF;
+             border: 1px solid #AFEEEE;
+             padding: 12px 12px;
+             color: #191970;
+             font-size: 13px;
+             font-weight: bold;}
+
+div.shap li:hover {background-color:#ADD8E6;
+                   color: #2F4F4F;
+                   text-shadow: 2px 2px 2px white;}
+
+div.shap a:hover {color: #2F4F4F;}
+
+.polsh {top: 32px;
+        left: 80px;
+        display: none;}
+
+.podmenu {width: 250px;
+          height: 30px;
+          line-height: 30px;
+          text-align: left;
+          padding-left: 10px;
+          background-color:#ADD8E6;
+          color: #2F4F4F;
+          text-shadow: 2px 2px 2px white;
+          border: 1px solid #AFEEEE;}
+
+.slovak{top: 32px;
+        left: 223px;
+        display: none;}
+
+ul.menu>li:nth-child(2):hover .polsh{display: block;}
+
+ul.menu>li:nth-child(3):hover .slovak{display: block;}
