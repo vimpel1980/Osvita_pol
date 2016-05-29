@@ -8,25 +8,16 @@
 .bord {margin: 0;
        border: none;}
 
+.box{box-sizing: border-box;}
+
 a {text-decoration: none;}
 
 .wrap {width: 955px;
        background-color: white;
-       margin: 0 auto;
-       }
+       margin: 0 auto;}
 
-.px{height: 3px;
-    color: #1E90FF;
-    background-color: #1E90FF;}
-
-.px2{size: 7px;
- 	   height: 7px;
-     color: #191970;
-     background-color: #191970;}
-
-.px3 {height: 5px;
-      color: #7B68EE;
-      background-color: #7B68EE;}
+.radug {height: 15px;
+        background:linear-gradient(to bottom, #1E90FF 20%, #191970 20%, #191970 66%, #7B68EE 66%);}
 
 .shap {width: 100%;}
 
@@ -40,7 +31,11 @@ a {text-decoration: none;}
 
 .logo {width: 211px;
        height: 180px;
-       overflow: hidden;}
+       overflow: hidden;} 
+
+.px20 {font-size: 20px;}
+
+.bold{font-weight: bold;}
 
 div.kult>img {width: 100%;
               padding-left: 35px;}
@@ -69,7 +64,7 @@ div.shap li:hover {background-color:#ADD8E6;
                    color: #2F4F4F;
                    text-shadow: 2px 2px 2px white;}
 
-div.shap a:hover {color: #2F4F4F;}
+header.shap a:hover {color: #2F4F4F;}
 
 .polsh {top: 32px;
         left: 80px;
@@ -80,7 +75,7 @@ div.shap a:hover {color: #2F4F4F;}
           line-height: 30px;
           text-align: left;
           padding-left: 10px;
-          background-color:#ADD8E6;
+          background-color: #ADD8E6;
           color: #2F4F4F;
           text-shadow: 2px 2px 2px white;
           border: 1px solid #AFEEEE;}
@@ -92,3 +87,27 @@ div.shap a:hover {color: #2F4F4F;}
 ul.menu>li:nth-child(2):hover .polsh{display: block;}
 
 ul.menu>li:nth-child(3):hover .slovak{display: block;}
+
+.sub-menu{width: 200px;}
+
+div.sub-menu>p{padding: 20px 0 10px 45px;
+               vertical-align: text-top;
+               margin: -20px 0px;}
+div.sub-menu>h1{margin: 25px 0 15px 0;}
+div.sub-menu>p:nth-child(2){background: url(../img/edukacja.png)no-repeat;
+                            background-position: left center;}
+div.sub-menu>p:nth-child(3){background: url(../img/zdz_chelm.png)no-repeat;
+                            background-position: left center;}
+div.sub-menu>p:nth-child(4){background: url(../img/zsz1.png)no-repeat;
+                            background-position: left center;}
+div.sub-menu>p:nth-child(5){background: url(../img/zsz4.png)no-repeat;
+                            background-position: left center;}
+div.sub-menu>p:nth-child(6){background: url(../img/zse.jpg)no-repeat;
+                            background-position: left center;}
+.vuz{font-size: 12px;
+     color: #1E90FF;
+     background-position: left center;
+     line-height: 15px;}
+
+p.vuz>a:hover{color: black;}
+p.vuz>a:visited{color: #1E90FF;}
