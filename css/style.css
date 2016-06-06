@@ -10,6 +10,9 @@
 
 .box{box-sizing: border-box;}
 
+.icon{width: 40px;
+      height: 40px;}
+
 a {text-decoration: none;}
 
 .wrap {width: 955px;
@@ -88,12 +91,16 @@ ul.menu>li:nth-child(2):hover .polsh{display: block;}
 
 ul.menu>li:nth-child(3):hover .slovak{display: block;}
 
-.sub-menu{width: 200px;}
+.sub-menu{width: 200px;
+          vertical-align: top;}
 
-div.sub-menu>p{padding: 20px 0 10px 45px;
-               vertical-align: text-top;
-               margin: -20px 0px;}
+div.sub-menu>p{padding: 18px 0 10px 45px;
+               vertical-align: top;
+               margin: 0 0 -18px 0;
+               text-align: top;}
+
 div.sub-menu>h1{margin: 25px 0 15px 0;}
+
 div.sub-menu>p:nth-child(2){background: url(../img/edukacja.png)no-repeat;
                             background-position: left center;}
 div.sub-menu>p:nth-child(3){background: url(../img/zdz_chelm.png)no-repeat;
@@ -103,11 +110,32 @@ div.sub-menu>p:nth-child(4){background: url(../img/zsz1.png)no-repeat;
 div.sub-menu>p:nth-child(5){background: url(../img/zsz4.png)no-repeat;
                             background-position: left center;}
 div.sub-menu>p:nth-child(6){background: url(../img/zse.jpg)no-repeat;
-                            background-position: left center;}
+                            background-position: left center;
+                            margin-bottom: 30px;}
+
 .vuz{font-size: 12px;
      color: #1E90FF;
-     background-position: left center;
      line-height: 15px;}
 
-p.vuz>a:hover{color: black;}
+p.vuz:hover .vuz{color: black;}
+
 p.vuz>a:visited{color: #1E90FF;}
+
+h2{margin-bottom: 15px;}
+
+.univer{vertical-align: bottom;
+        padding: 10px 0 0 0;
+        clear: both;
+        margin-bottom: -5px;}
+
+.text{width: 158px;
+      font-size: 12px;
+      color: #1E90FF;
+      vertical-align: center;
+      line-height: 15px;}
+
+div.univer img{width: 35px;
+               float: left;
+               margin-right: 7px;}
+
+div.univer a:hover .text{color: black;}
