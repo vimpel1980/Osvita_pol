@@ -10,9 +10,6 @@
 
 .box{box-sizing: border-box;}
 
-.icon{width: 40px;
-      height: 40px;}
-
 a {text-decoration: none;}
 
 .wrap {width: 955px;
@@ -94,22 +91,21 @@ ul.menu>li:nth-child(3):hover .slovak{display: block;}
 .sub-menu{width: 200px;
           vertical-align: top;}
 
-div.sub-menu>p{padding: 18px 0 10px 45px;
-               vertical-align: top;
-               margin: 0 0 -18px 0;
-               text-align: top;}
+section.sub-menu>p{padding: 18px 0 10px 45px;
+                   vertical-align: top;
+                   margin: 0 0 -18px 0;}
 
-div.sub-menu>h1{margin: 25px 0 15px 0;}
+section.sub-menu>h1{margin: 25px 0 15px 0;}
 
-div.sub-menu>p:nth-child(2){background: url(../img/edukacja.png)no-repeat;
+section.sub-menu>p:nth-child(2){background: url(../img/edukacja.png)no-repeat;
                             background-position: left center;}
-div.sub-menu>p:nth-child(3){background: url(../img/zdz_chelm.png)no-repeat;
+section.sub-menu>p:nth-child(3){background: url(../img/zdz_chelm.png)no-repeat;
                             background-position: left center;}
-div.sub-menu>p:nth-child(4){background: url(../img/zsz1.png)no-repeat;
+section.sub-menu>p:nth-child(4){background: url(../img/zsz1.png)no-repeat;
                             background-position: left center;}
-div.sub-menu>p:nth-child(5){background: url(../img/zsz4.png)no-repeat;
+section.sub-menu>p:nth-child(5){background: url(../img/zsz4.png)no-repeat;
                             background-position: left center;}
-div.sub-menu>p:nth-child(6){background: url(../img/zse.jpg)no-repeat;
+section.sub-menu>p:nth-child(6){background: url(../img/zse.jpg)no-repeat;
                             background-position: left center;
                             margin-bottom: 30px;}
 
@@ -123,8 +119,7 @@ p.vuz>a:visited{color: #1E90FF;}
 
 h2{margin-bottom: 15px;}
 
-.univer{vertical-align: bottom;
-        padding: 10px 0 0 0;
+.univer{padding: 10px 0 0 0;
         clear: both;
         margin-bottom: -5px;}
 
@@ -139,3 +134,27 @@ div.univer img{width: 35px;
                margin-right: 7px;}
 
 div.univer a:hover .text{color: black;}
+
+hr{width: 100%;
+   height: 1px;
+   background-color: #C0C0C0;
+   border: none;}
+
+.foot{width: 33%}
+
+footer h2{margin: 12px 0 12px 0;}
+
+footer p{margin-bottom: 7px;}
+
+footer a{font-size: 14px;
+          color: #1E90FF;}
+
+footer a:hover {color: black;}
+
+.foot-kont{height: 40px;
+           padding-left: 45px;
+           line-height: 40px;
+           margin-bottom: 17px;}
+
+.tel{background: url(../img/callback1.jpg)left center no-repeat;}
+.email{background: url(../img/email2.jpg)left center no-repeat;}
