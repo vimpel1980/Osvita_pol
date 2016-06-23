@@ -1,3 +1,4 @@
+@import "_mixins";
 
 .inline {display: inline-block;}
 
@@ -12,16 +13,16 @@
 
 a {text-decoration: none;}
 
-.wrap {width: 955px;
+.wrap {width: 950px;
        background-color: white;
        margin: 0 auto;}
 
 .radug {height: 15px;
         background:linear-gradient(to bottom, #1E90FF 20%, #191970 20%, #191970 66%, #7B68EE 66%);}
 
-.shap {width: 100%;}
+header {width: 100%;}
 
-.kult {height: 170px
+.kult {height: 170px;
        width: 650px;
        margin-left: 30px;
        overflow: hidden;
@@ -60,11 +61,11 @@ ul.menu>li {display: inline-block;
              font-size: 13px;
              font-weight: bold;}
 
-div.shap li:hover {background-color:#ADD8E6;
-                   color: #2F4F4F;
-                   text-shadow: 2px 2px 2px white;}
+ul.menu li:hover {background-color:#ADD8E6;
+                 color: #2F4F4F;
+                 text-shadow: 2px 2px 2px white;}
 
-header.shap a:hover {color: #2F4F4F;}
+header a:hover {color: #2F4F4F;}
 
 .polsh {top: 32px;
         left: 80px;
@@ -88,8 +89,9 @@ ul.menu>li:nth-child(2):hover .polsh{display: block;}
 
 ul.menu>li:nth-child(3):hover .slovak{display: block;}
 
-.sub-menu{width: 200px;
-          vertical-align: top;}
+.sub-menu{width: 20%;
+          .inline;
+          margin: 0;}
 
 section.sub-menu>p{padding: 18px 0 10px 45px;
                    vertical-align: top;
@@ -123,7 +125,7 @@ h2{margin-bottom: 15px;}
         clear: both;
         margin-bottom: -5px;}
 
-.text{width: 158px;
+.text{width: 77%;
       font-size: 12px;
       color: #1E90FF;
       vertical-align: center;

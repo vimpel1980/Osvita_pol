@@ -1,4 +1,4 @@
-var gulp=require('gulp');
+var gulp = require('gulp');
 var includer = require('gulp-htmlincluder');
 var connect = require('gulp-connect');
 var livereload = require('gulp-livereload');
@@ -16,7 +16,7 @@ gulp.task('sprite', function(){
 });
  
 gulp.task('html', function(){
-	gulp.surc('dev/**/*.html')
+	gulp.src('dev/**/*.html')
 		.pipe(includer())
     .pipe(gulp.dest('build/'))
     .pipe(connect.reload());
@@ -30,17 +30,18 @@ gulp.task('connect', function() {
 });
 
 gulp.task('less', function(){
-  gulp.src('general.less')
+  gulp.src('dev/less/**/*.less')
   .pipe(less())
-  .pipe(gulp.dest('build/css/'));
+  .pipe(gulp.dest('build/css/'))
+  .pipe(connect.reload());
 });
 
 gulp.task('default', function(){
-  gulp.start('concat', 'html', 'server', 'less');
+      gulp.start('connect','html', 'less');
   gulp.watch(['dev/css/**/*.css'], function(){
     gulp.start('concat');})
-  gulp.watch(['dev/**/*.html'], function(){
+  gulp.watch(['dev/**/*.html'], function(event){
     gulp.start('html');})
-  gulp.watch(['dev/**/*.less'], function(){
+  gulp.watch(['dev/less/**/*.less'], function(){
     gulp.start('less');})
 })
