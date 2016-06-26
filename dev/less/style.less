@@ -1,25 +1,42 @@
 @import "_mixins";
 @import "reset";
 @import "stile";
+@import "kompleks-shkil";
 
 section{.inline;}
+
+strong{font-weight: bold;
+       color: black;}
+
+h1{.fonts(32px,black);
+   line-height: 45px;
+   margin-bottom: 20px;}
 
 main{width: 75%;
 	 .inline;
 	 margin-left: 4%;
+	 & a:hover{color: black;};
+	 
      & div.text-section p:first-child{.fonts(19px,blue,bold);
      	              margin: 25px 0;
-     	              letter-spacing: -1px;};
-     & div.text-section:first-child p:nth-child(3){.fonts(14px,#696969);
-     	              line-height: 20px;}
-     & div.text-section p:nth-child(3){.fonts(12px,#696969);
-     	              line-height: 20px;}
-     & div.text-section p:nth-child(4){.fonts(18px,blue,bold);
-     	              margin: 30px 0 15px 0;
      	              letter-spacing: -1px;
-     	              text-align: right;
-     	              vertical-align: bottom;}
+     	              & a{color: blue;
+     	              	  text-decoration: none;
+     	              	  &:hover{color: black;}}}
+     & div.text-section:first-child p:nth-child(3){.fonts(14px,#696969);
+     	                                           line-height: 20px;}
+     & div.text-section p:nth-child(3){.fonts(12px,#696969);
+     	                               line-height: 20px;}
+     & div.text-section p:nth-child(4){.fonts(18px,blue,bold);
+				     	               margin: 30px 0 15px 0;
+				     	               letter-spacing: -1px;
+				     	               text-align: right;
+				     	               vertical-align: bottom;
+				     	               color: blue;
+				     	               &>a:visited{color: blue;}}
      & div.text-section hr{margin: 0;};}
+
+.text-section{text-align: left;}
 
 .welcom{width: 85%;
         overflow: hidden;
@@ -30,7 +47,7 @@ img{width: 100%;}
 .big-logo{width: 150px;
 	      clear: both;
           & img{float: left;
-          	    margin: 0 15px 20px 0;};}
+          	    margin: 0 18px 20px 0;};}
 
 .big-logo-mari{width: 200px;}
-.big-logo-gurn{width: 500px;}
+.big-logo-gurn{width: 500px;} 
