@@ -7,3 +7,13 @@
 .inline(@va:top){
 	display: inline-block;
 	vertical-align: @va;}
+
+.abs(@top: 0px, @rg:0px) {
+	 position: absolute;
+	 top: @top;
+	 right: @rg;}
+
+.float(@wd: 25%, @fl: left, @ver: 0, @right: 0, @niz: 0, @left: 0){
+	   width: @wd;
+	   float: @fl;
+	   margin: @ver @right @niz @left;}
