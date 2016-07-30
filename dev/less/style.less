@@ -15,15 +15,25 @@ h1{.fonts(32px,black);
 h2{.fonts(20px,black,700);
     margin: 40px 0px 20px 0px;}
 
+h3{.fonts(15px,#696969,700);}
+
+b{font-weight: bold;}
+
 img{width: 100%;}
 
-ul#list-st>li{display: list-item;
-	          list-style-position: outside;}
-
+ul.norm {padding-left: 5%;
+         & li{color: #696969;
+              line-height: 18px;
+              list-style: disc;}}
+     
 .centr{padding-left: 30%;}
+.cent{text-align: center;}
 
 .left{text-align: left;}
-
+.pad-left10{padding-left: 10%}
+.pad-left20{padding: 3% 0 0 15%;}
+.pad-left40{padding: 3% 0 0 40%;}
+.pad-left38{padding: 3% 0 0 38%;}
 
 main{width: 75%;
 	 .inline;
@@ -33,11 +43,11 @@ main{width: 75%;
 	 & a:hover{color: black;};
 	 
      & div.text-section p:first-child{.fonts(19px,blue,bold);
-     	              margin: 25px 0;
-     	              letter-spacing: -1px;
-     	              & a{color: blue;
-     	              	  text-decoration: none;
-     	              	  &:hover{color: black;}}}
+     	                                margin: 25px 0;
+     	                                letter-spacing: -1px;
+     	                                & a{color: blue;
+     	              	                    text-decoration: none;
+     	              	                    &:hover{color: black;}}}
      & div.text-section:first-child p:nth-child(3){.fonts(14px,#696969);
      	                                           line-height: 20px;}
      & div.text-section p:nth-child(3){.fonts(12px,#696969);
@@ -65,7 +75,10 @@ main{width: 75%;
 
 .big-logo-mari{width: 200px;}
 .big-logo-gurn{width: 500px;}
-.big-logo-univer{width: 250px;} 
+.big-logo-univer{width: 35%;}
+.big-logo-fin{width: 40%;}
+.big-logo-WSEH{width: 38%;}
+.big-logo-dietl{width: 15%;}
 
 // Opisanie stranic//
 
@@ -88,7 +101,7 @@ ul.kompleks-ekonom{& li{display: list-item;
 // universitet //
 
 .text-univer p{width:100%;
-	           text-indent: 15px;
+	             text-indent: 15px;
                margin-bottom: 15px;
                text-align: justify;
                .fonts(14px, #696969);
@@ -127,31 +140,54 @@ div.cl{&>img:first-child{width: 25%;
  	   &>img:last-child{width: 26%;
  	   	                margin: ;};}
 table{width: 100%;
-	  text-align: center;
-	  border-collapse: collapse;
-	  & thead{background-color: #5F9EA0;
+	    text-align: center;
+	    border-collapse: collapse;
+	    & thead{background-color: #5F9EA0;
        	       .fonts(15px, white);
        	       line-height: 20px;
        	       border-right: 1px solid #5F9EA0;};
-      & tbody p{color: #696969;
-      	         &:first-child{padding-top: 10px;}};}
+      & tbody p,span{color: #696969;
+      	             &:first-child{padding-top: 10px;}};}
 
-.tab-bord-bot{width: 38.5%;
-	          border-bottom: 1px solid #696969;}
+.tab-bord-bot{border-bottom: 1px solid #696969;}
 .tab-bord-rig{border-right: 1px solid #5F9EA0;}
-.tab-bord-left{width:25%;
-	           border-left: 1px solid #5F9EA0;}
+.tab-bord-left{border-left: 1px solid #5F9EA0;}
+.tab-bord-left1{border-left: 1px solid #696969;}
+.tab-bord-rig1{border-right: 1px solid #696969;}
+
+.w37{width: 37.5%;}
+.w25{width: 25%;}
+.w50{width: 50%;}
 
 .vert{vertical-align: middle;}
 
 #ind{text-indent: 0;}
 
 ul.left{& li{.fonts(14px, #696969);
-	         padding-left: 50px;
-	         list-style: none;
-	         line-height: 23px;};
-	    & li:before{content: "-";
+	           list-style: none;
+	           line-height: 23px;};
+	    &.tire li:before{content: "-";
 	                padding-right: 5px;
 	                color: #696969;}}
 
 td.tab-bord-left span{line-height: 100%;}
+
+.vipad-spis{margin-left: 15px;
+	          border: 1px solid #C0C0C0;
+            border-radius: 2px;
+            padding: 0;
+            margin-bottom: 20px;
+            & div.ss{line-height: 26px;
+                     background-color: #C0C0C0;
+                     }
+            & a{padding-left: 3%}
+            & div#ident,#inform,#pravo,#sec,#posledip,#evro,#histor,#ohor,#socio,#ped,#polit,#maneg{background-color: white;
+                                                                                                    & p{padding: 0 10px 0 3px;}
+            	                                                                                      & ul {padding-left: 5%;
+            	        	                                                                            & li{line-height: 20px;
+                                                                                                         list-style: disc;
+            	        	                                                                                 color: #696969;
+            	        	                                                                                 .fonts(13px, #696969)}}}}
+
+#abzac{text-indent: 0px;} 
+.ln{line-height: 140%;}       	        	        

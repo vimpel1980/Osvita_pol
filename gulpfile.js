@@ -36,8 +36,13 @@ gulp.task('less', function(){
   .pipe(connect.reload());
 });
 
+gulp.task('move', function(){
+  gulp.src('dev/js/*.js').pipe(gulp.dest('build/js/'));
+  gulp.src('dev/img/**/*.*').pipe(gulp.dest('build/img/'));
+})
+
 gulp.task('default', function(){
-      gulp.start('connect','html', 'less');
+      gulp.start('connect','html', 'less', 'move');
   gulp.watch(['dev/css/**/*.css'], function(){
     gulp.start('concat');})
   gulp.watch(['dev/**/*.html'], function(event){
