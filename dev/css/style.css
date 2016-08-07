@@ -1,0 +1,821 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.inline {
+  display: inline-block;
+}
+.relat {
+  position: relative;
+}
+.absolut {
+  position: absolute;
+}
+.bord {
+  margin: 0;
+  border: none;
+}
+.box {
+  box-sizing: border-box;
+}
+section,
+header,
+footer a {
+  text-decoration: none;
+}
+section > p.vuz a:hover {
+  color: black;
+}
+.wrap {
+  width: 950px;
+  background-color: white;
+  margin: 0 auto;
+}
+.radug {
+  height: 15px;
+  background: linear-gradient(to bottom, #1E90FF 20%, #191970 20%, #191970 66%, #7B68EE 66%);
+}
+header {
+  width: 100%;
+}
+.kult {
+  height: 170px;
+  width: 650px;
+  margin-left: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+}
+.logo {
+  width: 211px;
+  height: 180px;
+  overflow: hidden;
+}
+.px20 {
+  font-size: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+div.kult > img {
+  width: 100%;
+  padding-left: 35px;
+}
+.pod-zam {
+  size: 1px;
+  height: 1px;
+  color: blue;
+  background-color: blue;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.pod-zam2 {
+  size: 2px;
+  height: 2px;
+  color: blue;
+  background-color: blue;
+}
+ul.menu > li {
+  display: inline-block;
+  background-color: #E0FFFF;
+  border: 1px solid #AFEEEE;
+  padding: 12px 12px;
+  color: #191970;
+  font-size: 13px;
+  font-weight: bold;
+}
+ul.menu li:hover {
+  background-color: #ADD8E6;
+  color: #2F4F4F;
+  text-shadow: 2px 2px 2px white;
+}
+nav {
+  margin-bottom: 15px;
+}
+header a:hover {
+  color: #2F4F4F;
+}
+.polsh {
+  top: 32px;
+  left: 80px;
+  display: none;
+}
+.podmenu {
+  width: 250px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  padding-left: 10px;
+  background-color: #ADD8E6;
+  color: #2F4F4F;
+  text-shadow: 2px 2px 2px white;
+  border: 1px solid #AFEEEE;
+}
+.slovak {
+  top: 32px;
+  left: 223px;
+  display: none;
+}
+ul.menu > li:nth-child(2):hover .polsh {
+  display: block;
+  z-index: 100;
+}
+ul.menu > li:nth-child(3):hover .slovak {
+  display: block;
+  z-index: 100;
+}
+.sub-menu {
+  width: 20%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0;
+}
+section.sub-menu > p {
+  padding: 18px 0 10px 45px;
+  vertical-align: top;
+  margin: 0 0 -18px 0;
+}
+section.sub-menu > h1 {
+  margin: 25px 0 15px 0;
+}
+section.sub-menu > p:nth-child(2) {
+  background: url(../img/edukacja.png) no-repeat;
+  background-position: left center;
+}
+section.sub-menu > p:nth-child(3) {
+  background: url(../img/zdz_chelm.png) no-repeat;
+  background-position: left center;
+}
+section.sub-menu > p:nth-child(4) {
+  background: url(../img/zsz1.png) no-repeat;
+  background-position: left center;
+}
+section.sub-menu > p:nth-child(5) {
+  background: url(../img/zsz4.png) no-repeat;
+  background-position: left center;
+}
+section.sub-menu > p:nth-child(6) {
+  background: url(../img/zse.jpg) no-repeat;
+  background-position: left center;
+  margin-bottom: 30px;
+}
+.vuz {
+  font-size: 12px;
+  color: #1E90FF;
+  line-height: 15px;
+}
+p.vuz:hover .vuz {
+  color: black;
+}
+p.vuz > a:visited {
+  color: #1E90FF;
+}
+h2 {
+  margin-bottom: 15px;
+}
+.univer {
+  padding: 10px 0 0 0;
+  clear: both;
+  margin-bottom: -5px;
+}
+.text {
+  width: 77%;
+  font-size: 12px;
+  color: #1E90FF;
+  vertical-align: center;
+  line-height: 15px;
+  text-decoration: none;
+}
+div.univer img {
+  width: 35px;
+  float: left;
+  margin-right: 7px;
+}
+div.univer a:hover .text {
+  color: black;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: #C0C0C0;
+  border: none;
+}
+.foot {
+  width: 33%;
+}
+footer h2 {
+  margin: 12px 0 12px 0;
+}
+footer p {
+  margin-bottom: 7px;
+}
+footer a {
+  font-size: 14px;
+  color: #1E90FF;
+}
+footer a:hover {
+  color: black;
+}
+.foot-kont {
+  height: 40px;
+  padding-left: 45px;
+  line-height: 40px;
+  margin-bottom: 17px;
+}
+.tel {
+  background: url(../img/callback1.jpg) left center no-repeat;
+}
+.email {
+  background: url(../img/email2.jpg) left center no-repeat;
+}
+.text-ucheba {
+  text-align: justify;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+  line-height: 18px;
+}
+.text-ucheba p:nth-child(3) {
+  margin-bottom: 30px;
+}
+.text-ucheba p:nth-child(4) {
+  margin-bottom: 50px;
+}
+.text-ucheba ul > li {
+  margin-bottom: 25px;
+  display: block;
+}
+.text-ucheba ul > li > ul > li {
+  display: list-item;
+  margin: 5px 0 5px 30px;
+  list-style: disc;
+}
+section {
+  vertical-align: top;
+  display: inline-block;
+}
+strong {
+  font-weight: bold;
+  color: black;
+}
+h1 {
+  font-size: 32px;
+  font-family: sans-serif;
+  color: black;
+  font-weight: normal;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+  font-weight: 700;
+  margin: 40px 0px 20px 0px;
+}
+h3 {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: 700;
+}
+b {
+  font-weight: bold;
+}
+img {
+  width: 100%;
+}
+ul.norm {
+  padding-left: 5%;
+}
+ul.norm li {
+  color: #696969;
+  line-height: 18px;
+  list-style: disc;
+}
+.centr {
+  padding-left: 30%;
+}
+.cent {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.pad-left10 {
+  padding-left: 10%;
+}
+.pad-left20 {
+  padding: 3% 0 0 15%;
+}
+.pad-left40 {
+  padding: 3% 0 0 40%;
+}
+.pad-left38 {
+  padding: 3% 0 0 38%;
+}
+.pad-lf {
+  padding-left: 2%;
+}
+.pad-lf5 {
+  padding-left: 5%;
+}
+main {
+  width: 75%;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 4%;
+  position: relative;
+}
+main a {
+  color: blue;
+}
+main a:hover {
+  color: black;
+}
+main div.text-section p:first-child {
+  font-size: 19px;
+  font-family: sans-serif;
+  color: blue;
+  font-weight: bold;
+  margin: 25px 0;
+  letter-spacing: -1px;
+}
+main div.text-section p:first-child a {
+  color: blue;
+  text-decoration: none;
+}
+main div.text-section p:first-child a:hover {
+  color: black;
+}
+main div.text-section:first-child p:nth-child(3) {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+  line-height: 20px;
+}
+main div.text-section p:nth-child(3) {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+  line-height: 20px;
+}
+main div.text-section p:nth-child(4) {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+  letter-spacing: -1px;
+  text-align: right;
+  vertical-align: bottom;
+  color: blue;
+}
+main div.text-section p:nth-child(4) > a:visited {
+  color: blue;
+}
+main div.text-section p:nth-child(4) > a:hover {
+  color: black;
+}
+main div.text-section hr {
+  margin: 0;
+}
+.text-section {
+  text-align: left;
+}
+.welcom {
+  width: 85%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.big-logo {
+  width: 150px;
+  clear: both;
+}
+.big-logo img {
+  float: left;
+  margin: 0 18px 20px 0;
+}
+.big-logo-mari {
+  width: 200px;
+}
+.big-logo-gurn {
+  width: 500px;
+}
+.big-logo-univer {
+  width: 35%;
+}
+.big-logo-fin {
+  width: 40%;
+}
+.big-logo-WSEH {
+  width: 38%;
+}
+.big-logo-dietl {
+  width: 15%;
+}
+.big-logo-Pol {
+  width: 20%;
+}
+.big-logo-vinc {
+  width: 30%;
+}
+.text-ucheba {
+  text-align: justify;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+  line-height: 18px;
+}
+.text-ucheba p:nth-child(3) {
+  margin-bottom: 30px;
+}
+.text-ucheba p:nth-child(4) {
+  margin-bottom: 50px;
+}
+.text-ucheba ul > li {
+  margin-bottom: 25px;
+  display: block;
+}
+.text-ucheba ul > li > ul > li {
+  display: list-item;
+  margin: 5px 0 5px 30px;
+  list-style: disc;
+}
+ul.kompleks-ekonom li {
+  display: list-item;
+  list-style: disc;
+  margin-bottom: 10px;
+}
+ul.kompleks-ekonom li:last-child {
+  margin-bottom: 50px;
+}
+.text-univer p,
+span {
+  width: 100%;
+  text-indent: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+  line-height: 18px;
+  position: relative;
+}
+.uew {
+  width: 25%;
+  float: right;
+  margin: 0px 0px 0px 10px;
+}
+.bizn {
+  width: 45%;
+  float: right;
+  margin: 0px 0px 0px 20px;
+}
+.stud {
+  width: 45%;
+  float: left;
+  margin: 0 20px 0 0;
+}
+.um {
+  width: 40%;
+  float: right;
+  margin: 0px 0px 0px 20px;
+}
+.um1 {
+  width: 25%;
+  float: left;
+  margin: 0 20px 0 0;
+}
+.um2 {
+  width: 26%;
+  float: left;
+  margin: 0 20px 0 0;
+}
+ul.spisok-univer li {
+  display: list-item;
+  list-style: disc;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+  padding-bottom: 2px;
+  margin-left: 45px;
+  line-height: 17px;
+  text-align: justify;
+}
+.cl {
+  display: inline-block;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0;
+  vertical-align: top;
+}
+div.cl > img:first-child {
+  width: 25%;
+  margin-right: 2px;
+}
+div.cl > img:nth-child(2) {
+  width: 25%;
+  margin-right: 2px;
+}
+div.cl > img:last-child {
+  width: 26%;
+  margin: ;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table thead {
+  background-color: #5F9EA0;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  font-weight: normal;
+  line-height: 20px;
+  border-right: 1px solid #5F9EA0;
+}
+table tbody p,
+table span {
+  color: #696969;
+}
+table tbody p:first-child,
+table span:first-child {
+  padding-top: 10px;
+}
+.tab-bord-bot {
+  border-bottom: 1px solid #696969;
+}
+.tab-bord-rig {
+  border-right: 1px solid #5F9EA0;
+}
+.tab-bord-left {
+  border-left: 1px solid #5F9EA0;
+}
+.tab-bord-left1 {
+  border-left: 1px solid #696969;
+}
+.tab-bord-rig1 {
+  border-right: 1px solid #696969;
+}
+.w37 {
+  width: 37.5%;
+}
+.w25 {
+  width: 25%;
+}
+.w50 {
+  width: 50%;
+}
+.vert {
+  vertical-align: middle;
+}
+#ind {
+  text-indent: 0;
+}
+ul.left li {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+  list-style: none;
+  line-height: 23px;
+}
+ul.left.tire li:before {
+  content: "-";
+  padding-right: 5px;
+  color: #696969;
+}
+td.tab-bord-left span {
+  line-height: 100%;
+}
+.vipad-spis {
+  margin-left: 15px;
+  border: 1px solid #C0C0C0;
+  border-radius: 2px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.vipad-spis div.ss {
+  line-height: 26px;
+  background-color: #C0C0C0;
+}
+.vipad-spis a {
+  padding-left: 3%;
+}
+.vipad-spis div#ident,
+.vipad-spis #inform,
+.vipad-spis #pravo,
+.vipad-spis #sec,
+.vipad-spis #posledip,
+.vipad-spis #evro,
+.vipad-spis #histor,
+.vipad-spis #ohor,
+.vipad-spis #socio,
+.vipad-spis #ped,
+.vipad-spis #polit,
+.vipad-spis #maneg {
+  background-color: white;
+  margin: 0 10px 0 5px;
+}
+.vipad-spis div#ident p,
+.vipad-spis #inform p,
+.vipad-spis #pravo p,
+.vipad-spis #sec p,
+.vipad-spis #posledip p,
+.vipad-spis #evro p,
+.vipad-spis #histor p,
+.vipad-spis #ohor p,
+.vipad-spis #socio p,
+.vipad-spis #ped p,
+.vipad-spis #polit p,
+.vipad-spis #maneg p {
+  padding: 0 10px 0 3px;
+}
+.vipad-spis div#ident ul,
+.vipad-spis #inform ul,
+.vipad-spis #pravo ul,
+.vipad-spis #sec ul,
+.vipad-spis #posledip ul,
+.vipad-spis #evro ul,
+.vipad-spis #histor ul,
+.vipad-spis #ohor ul,
+.vipad-spis #socio ul,
+.vipad-spis #ped ul,
+.vipad-spis #polit ul,
+.vipad-spis #maneg ul {
+  padding-left: 5%;
+}
+.vipad-spis div#ident ul li,
+.vipad-spis #inform ul li,
+.vipad-spis #pravo ul li,
+.vipad-spis #sec ul li,
+.vipad-spis #posledip ul li,
+.vipad-spis #evro ul li,
+.vipad-spis #histor ul li,
+.vipad-spis #ohor ul li,
+.vipad-spis #socio ul li,
+.vipad-spis #ped ul li,
+.vipad-spis #polit ul li,
+.vipad-spis #maneg ul li {
+  line-height: 20px;
+  list-style: disc;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: normal;
+}
+#abzac {
+  text-indent: 0px;
+}
+.ln {
+  line-height: 150%;
+}
+.decim {
+  list-style: decimal;
+}
+.alpha {
+  list-style: lower-alpha;
+}
+.decim,
+.alpha {
+  color: #696969;
+}
+ul.decim p {
+  text-indent: 0px;
+}
+.indigo {
+  color: #4B0082;
+}

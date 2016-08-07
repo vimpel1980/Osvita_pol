@@ -1,5 +1,5 @@
-@import "_mixins";
 @import "reset";
+@import "_mixins";
 @import "stile";
 @import "kompleks-shkil";
 
@@ -34,6 +34,8 @@ ul.norm {padding-left: 5%;
 .pad-left20{padding: 3% 0 0 15%;}
 .pad-left40{padding: 3% 0 0 40%;}
 .pad-left38{padding: 3% 0 0 38%;}
+.pad-lf{padding-left: 2%;}
+.pad-lf5{padding-left: 5%;}
 
 main{width: 75%;
 	 .inline;
@@ -79,6 +81,8 @@ main{width: 75%;
 .big-logo-fin{width: 40%;}
 .big-logo-WSEH{width: 38%;}
 .big-logo-dietl{width: 15%;}
+.big-logo-Pol{width: 20%;}
+.big-logo-vinc{width: 30%}
 
 // Opisanie stranic//
 
@@ -100,13 +104,13 @@ ul.kompleks-ekonom{& li{display: list-item;
 
 // universitet //
 
-.text-univer p{width:100%;
-	             text-indent: 15px;
-               margin-bottom: 15px;
-               text-align: justify;
-               .fonts(14px, #696969);
-               line-height: 18px;
-               position: relative;}
+.text-univer p,span{width:100%;
+	                  text-indent: 15px;
+                    margin-bottom: 15px;
+                    text-align: justify;
+                    .fonts(14px, #696969);
+                    line-height: 18px;
+                    position: relative;}
 
 .uew{.float(25%,right,0px,0px,0px,10px)}
 
@@ -182,6 +186,7 @@ td.tab-bord-left span{line-height: 100%;}
                      }
             & a{padding-left: 3%}
             & div#ident,#inform,#pravo,#sec,#posledip,#evro,#histor,#ohor,#socio,#ped,#polit,#maneg{background-color: white;
+                                                                                                    margin: 0 10px 0 5px;
                                                                                                     & p{padding: 0 10px 0 3px;}
             	                                                                                      & ul {padding-left: 5%;
             	        	                                                                            & li{line-height: 20px;
@@ -190,4 +195,15 @@ td.tab-bord-left span{line-height: 100%;}
             	        	                                                                                 .fonts(13px, #696969)}}}}
 
 #abzac{text-indent: 0px;} 
-.ln{line-height: 140%;}       	        	        
+
+.ln{line-height: 150%;}
+
+.decim{list-style: decimal;}
+
+.alpha{list-style: lower-alpha;}
+
+.decim,.alpha{color: #696969;}
+
+ul.decim p{text-indent: 0px;}
+
+.indigo{color: #4B0082;}     	        	        
