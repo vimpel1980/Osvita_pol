@@ -105,12 +105,14 @@ ul.kompleks-ekonom{& li{display: list-item;
 // universitet //
 
 .text-univer p,span{width:100%;
-	                  text-indent: 15px;
+	                text-indent: 15px;
                     margin-bottom: 15px;
                     text-align: justify;
                     .fonts(14px, #696969);
                     line-height: 18px;
-                    position: relative;}
+                    position: relative;
+                    & ul{list-style: disc;
+                         padding: 0 0 2% 5%;}}
 
 .uew{.float(25%,right,0px,0px,0px,10px)}
 
@@ -162,6 +164,7 @@ table{width: 100%;
 .w37{width: 37.5%;}
 .w25{width: 25%;}
 .w50{width: 50%;}
+.w70{width: 70%;}
 
 .vert{vertical-align: middle;}
 
@@ -206,4 +209,8 @@ td.tab-bord-left span{line-height: 100%;}
 
 ul.decim p{text-indent: 0px;}
 
-.indigo{color: #4B0082;}     	        	        
+.indigo{color: #4B0082;} 
+
+.podcherk{text-decoration: underline;}
+
+table.wseh.almamer{& tr{& td{padding: 1% 0 1% 0;}}}
