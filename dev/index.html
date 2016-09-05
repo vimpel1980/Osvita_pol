@@ -4,8 +4,6 @@
 
 	<title>Вища освіта в Польщі</title>
 	<meta charset="utf-8">
-	<!--Import materialize.css-->
-    <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
@@ -13,12 +11,26 @@
 	<!--#insert file="-header.html"-->
 	<!--#insert file="-section.html"-->
 	<main>
+		<div class="slid">
+			<div class="slider">
+				<img src="img/slider/s_1.jpg" data-target="one">
+				<img src="img/slider/s_2.jpg" data-target="two" class="disp">
+				<img src="img/slider/s_3.jpg" data-target="three" class="disp">
+				<img src="img/slider/s_4.jpg" data-target="four" class="disp">
+				<img src="img/slider/s_5.jpg" data-target="five" class="disp">
+			</div>
+			<div class="sharik" id="one"></div>
+			<div class="sharik" id="two"></div>
+			<div class="sharik" id="three"></div>
+			<div class="sharik" id="four"></div>
+			<div class="sharik" id="five"></div>
+		</div>
 		<div class="text-section">
 			<p><a href="welcome to college.html">Запрошуємо на навчання в технікумах Республіки Польща</a></p>
 			<div class="welcom">
 				<img src="img/welcom.jpg" alt="Welcome to college">
 			</div>
-			<p>Пропонуємо учням після закінчення 9-10 класу взяти участь у програмі "Навчання в техныкумах Республіки Польща".</p>
+			<p>Пропонуємо учням після закінчення 9-10 класу взяти участь у програмі "Навчання в технікумах Республіки Польща".</p>
 			<p><a href="welcome to college.html">Читати далі</a></p>
 			<hr>
 		</div>
@@ -105,12 +117,31 @@
 	</main>
 	<!--#insert file="-footer.html"-->
 </div>
-<!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+
       <script type="text/javascript">
-        $(document).ready(function(){
-      $('.slider').slider({full_width: true});
-    });
+      var img=document.getElementsByClassName('slider')[0].getElementsByTagName('img');
+      function slider(){
+       	console.log(img);
+       	for(var i=0; i<img.length; i++){
+       			if(!img[i].classList.contains('disp')){
+       				img[i].classList.add('disp');
+       				if(i<4){img[i+1].classList.remove('disp');
+       						var id=img[i+1].dataset.target;
+       						console.log(id);
+       					    document.getElementById(id).classList.add('sharik_activ');
+       					    document.getElementById(id).previousElementSibling.classList.remove('sharik_activ');
+       					    break;}
+       					else if(i==4){img[0].classList.remove('disp');
+       				                  img[i].classList.add('disp');
+       				                  five.classList.remove('sharik_activ');
+       				                  one.classList.add('sharik_activ');
+       				                  break;}
+       			};
+       			
+       		}
+       	
+       };
+       window.onload=slider;
+       setInterval(slider, 4500);
       </script>
 </body>

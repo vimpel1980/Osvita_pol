@@ -208,10 +208,17 @@ ul.menu > li {
   font-size: 13px;
   font-weight: bold;
 }
-ul.menu li:hover {
+ul.menu > li a {
+  text-decoration: none;
+}
+ul.menu > li ul.absolut > li a:visited {
+  color: #2F4F4F;
+}
+ul.menu > li:hover {
   background-color: #ADD8E6;
   color: #2F4F4F;
   text-shadow: 2px 2px 2px white;
+  cursor: pointer;
 }
 nav {
   margin-bottom: 15px;
@@ -424,6 +431,9 @@ ul.norm li {
 .cent {
   text-align: center;
 }
+.DarkGrey {
+  color: #2F4F4F;
+}
 .left {
   text-align: left;
 }
@@ -624,6 +634,16 @@ span ul {
   width: 26%;
   float: left;
   margin: 0 20px 0 0;
+}
+.pol {
+  width: 30%;
+  float: right;
+  margin: 0px 0px 0px 20px;
+}
+.shem {
+  width: 65%;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 ul.spisok-univer li {
   display: list-item;
@@ -832,4 +852,80 @@ ul.decim p {
 }
 table.wseh.almamer tr td {
   padding: 1% 0 1% 0;
+}
+#poland_h {
+  font-size: 21px;
+  font-family: sans-serif;
+  color: #696969;
+  font-weight: 500;
+  line-height: 125%;
+}
+div.wrap > main p.blue {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #4169E1;
+  font-weight: 600;
+}
+div.wrap > main span.poland_spisok ul > li {
+  padding-bottom: 0.8%;
+}
+.poland_vuz {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 700;
+  height: 3em;
+  width: 35%;
+  background: linear-gradient(to top, #80bf4f 0%, #63a72f 100%);
+  border: 1px solid #65ab30;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 0 0 #9bcb76;
+  text-shadow: 0 1px 0 #529122;
+}
+a.but:hover .poland_vuz {
+  background: linear-gradient(to bottom, #80bf4f 0%, #63a72f 100%);
+  cursor: pointer;
+}
+button.poland_vuz {
+  margin: 0 2% 2% 0;
+}
+.block {
+  clear: both;
+}
+#besplatno {
+  font-size: 1.25em;
+  font-family: sans-serif;
+  color: red;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+#p18 {
+  font-size: 1.2em;
+  font-family: sans-serif;
+  color: black;
+  font-weight: 800;
+}
+.slid {
+  width: 100%;
+  margin: 0 0 5% 0;
+  height: 188px;
+}
+.slider {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+.sharik {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: grey;
+  display: inline-block;
+  margin: 5px 3px 20px 0;
+}
+.disp {
+  display: none;
+}
+.sharik_activ {
+  background-color: blue;
 }
