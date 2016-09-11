@@ -125,13 +125,13 @@
        	for(var i=0; i<img.length; i++){
        			if(!img[i].classList.contains('disp')){
        				img[i].classList.add('disp');
-       				if(i<4){img[i+1].classList.remove('disp');
+       				if(i<img.length-1){img[i+1].classList.remove('disp');
        						var id=img[i+1].dataset.target;
        						console.log(id);
        					    document.getElementById(id).classList.add('sharik_activ');
        					    document.getElementById(id).previousElementSibling.classList.remove('sharik_activ');
        					    break;}
-       					else if(i==4){img[0].classList.remove('disp');
+       					else if(i==img.length-1){img[0].classList.remove('disp');
        				                  img[i].classList.add('disp');
        				                  five.classList.remove('sharik_activ');
        				                  one.classList.add('sharik_activ');

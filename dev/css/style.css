@@ -201,10 +201,10 @@ div.kult > img {
 }
 ul.menu > li {
   display: inline-block;
-  background-color: #E0FFFF;
+  background-color: #d9ecff;
   border: 1px solid #AFEEEE;
   padding: 12px 12px;
-  color: #191970;
+  color: #00305f;
   font-size: 13px;
   font-weight: bold;
 }
@@ -212,13 +212,17 @@ ul.menu > li a {
   text-decoration: none;
 }
 ul.menu > li ul.absolut > li a:visited {
-  color: #2F4F4F;
+  color: #00305f;
+  /*#2F4F4F;*/
 }
 ul.menu > li:hover {
   background-color: #ADD8E6;
   color: #2F4F4F;
   text-shadow: 2px 2px 2px white;
   cursor: pointer;
+}
+ul.menu > a:visited li {
+  color: #00305f;
 }
 nav {
   margin-bottom: 15px;
@@ -424,6 +428,12 @@ ul.norm li {
   color: #696969;
   line-height: 18px;
   list-style: disc;
+}
+.clear {
+  clear: both;
+}
+.podcherk {
+  text-decoration: underline;
 }
 .centr {
   padding-left: 30%;
@@ -642,6 +652,16 @@ span ul {
 }
 .shem {
   width: 65%;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.slov {
+  width: 50%;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+.slov-vuz {
+  width: 100%;
   float: left;
   margin: 0 20px 20px 0;
 }
@@ -907,7 +927,7 @@ button.poland_vuz {
 }
 .slid {
   width: 100%;
-  margin: 0 0 5% 0;
+  margin: 2% 0 5% 0;
   height: 188px;
 }
 .slider {
